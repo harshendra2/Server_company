@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const DB = process.env.DATABASE;
 
 mongoose
-  .connect(DB, {
+  .connect("mongodb+srv://harsendraraj20:3PhNDGDHb3fxlLEd@cluster0.idcuttr.mongodb.net/?retryWrites=true&w=majority", {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   })
